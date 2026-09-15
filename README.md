@@ -1,13 +1,22 @@
-Experiment 3: PYTHON DATA ANALYSIS (PANDAS)  
-Negranza, Jake Andrei D.  
-2ECE-A  
-September 15, 2026
+# Experiment 3: PYTHON DATA ANALYSIS (PANDAS)  
+## Negranza, Jake Andrei D.  
+## 2ECE-A  
+## September 15, 2026  
+---
+## 🖊 Intended Learning Outcomes
+1. load a CSV dataset into a Pandas DataFrame;
+2. select rows and columns using positional and label-based indexing;
+3. filter records using conditions on a DataFrame column; and
+4. extract a well-defined subset of data without changing the source data.
+---
+## ❗️Instructions
+### This code imports the Pandas library (pd) and load the CSV file into the DataFrame named cars
 ```
 import pandas as pd
 
-#Load the csv file
 cars = pd.read_csv('cars.csv')
 ```
+---
 A. Positional and Label-based Slicing
 ```
 # part a
