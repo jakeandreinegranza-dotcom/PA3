@@ -44,11 +44,7 @@ cars_6_to_10[['Model', 'mpg', 'cyl', 'hp', 'gear']]
 ## Sample Output:  
 Shape of DataFrame:  (32, 12)  
 Column Names:  ['Model', 'mpg', 'cyl', 'disp', 'hp', 'drat', 'wt', 'qsec', 'vs', 'am', 'gear', 'carb']  
-| Model | mpg | cyl | hp |
-| :--- | :--- | :--- | :--- |
-| `rotate_word(text)` | `text` (str) | `str` | Moves index `0` to end using `text[1:] + text[0]` |
-| `make_username(first_name, last_name)` | `first_name` (str), `last_name` (str) | `str` | Lowercases, strips spaces, joins with `.` |
-| `swap_bookends(lst)` | `lst` (list) | `list` | Unpacks using `first, *middle, last`, swaps endpoints |
+<img width="306" height="225" alt="image" src="https://github.com/user-attachments/assets/cf3a64df-a2ad-4a18-82cf-1951a7f2a88e" />
 
 ---
 ## B. Model Lookup
@@ -62,6 +58,9 @@ display(toyota)
 pontiac = cars[cars['Model'] == 'Pontiac Firebird'][['Model', 'mpg', 'hp', 'wt',]]
 display(pontiac)
 ```
+## Sample Output:  
+<img width="652" height="172" alt="image" src="https://github.com/user-attachments/assets/28ecf6db-1632-4fbf-bf3e-ee276e4cdb65" />
+
 ---
 ## C. Multi-model Subsetting
 Performs multi-value Boolean filtering using .isin() to retrieve records for three specific car models simultaneously, displaying a restricted 5-column subset verified to contain exactly 3 rows.  
@@ -72,3 +71,5 @@ selected_cars = cars[cars['Model'].isin(selected_models)][['Model' ,'mpg', 'cyl'
 display(selected_cars)
 print("Shape of selected_cars", selected_cars.shape)
 ```
+Sample Output:  
+<img width="325" height="188" alt="image" src="https://github.com/user-attachments/assets/411e78a1-a439-480f-b629-198b3a66ef63" />
